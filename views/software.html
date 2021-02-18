@@ -2,14 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AHA Lab Software</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../statics/stylesheets/style.css" />
+    <style>
+        p {
+            margin-top: 2.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.05em;
+            font-weight: 900;
+            color: rgb(90, 90, 90);
+        }
+        
+        ul li {
+            margin-bottom: 0.8rem;
+            line-height: 1.2rem;
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-color: #f1f4f9;">
+    <div class="header-top"></div>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">People</a>
+            <a href="" class='selected'>Research</a>
+            <a href="">Publication</a>
+            <a href="">Software(CAT/BNAs)</a>
+            <a href="">Assessment</a>
+            <a href="">Consulting</a>
+        </nav>
+        <div class="yellow-line"></div>
+        <div class="title-markers">
+            <img src="../statics/img/aha-logo.png" alt="AHA LAB LOGO" class="title-logo">
+            <div class="title-text">LAB RESEARCH</div>
+        </div>
+    </header>
+    <div style="height:100vh; position:fixed; top:0; right:0; width:7vw; background-color: rgba(148, 225, 255, 0.3);"></div>
 
+    <main>
+        <div style="display: flex; justify-content:center; flex-wrap: wrap; margin-top:8vh">
+            <div style="height: 1rem; width:15rem"></div>
+            <div style="max-width:700px">
+                <p>
+                    1. CAFT (<b>C</b>omputerized <b>A</b>daptive <b>F</b>ormative
+                    <b>T</b>esting): Free online software for research [Website]
+                </p>
+                <span>
+                    The CAFT can test an examinee by adaptively selecting item from an
+                    item bank. Also, Users can establish a serial assessment that can
+                    measure a learner’s ability change. 
+                </span>
+                <img class="z-depth-1" style="width: 70%;margin-left:15%" src="../statics/img/caft.png" alt="Figure 1. An Architecture of the CAFT.">
+                <img class="z-depth-1" style="width: 70%;margin-left:15%" src="../statics/img/caft2.png" alt="Figure 2. An example of CAFT using CAT system: Engine Window.">
+                <img class="z-depth-1" style="width: 70%;margin-left:15%" src="../statics/img/caft3.png" alt="">
+                <br><span>Choi, Y. & McClenen, C. (2020). Development of Adaptive Formative Assessment System using Computerized Adaptive Testing and Dynamic Bayesian Network, Journal of Applied Sciences. </span>
+                <p>
+                    2. CADT (<b>C</b>omputerized <b>A</b>daptive <b>D</b>iagnostics
+                    <b>T</b>esting): Upcoming
+                </p>
+                <p>
+                    3. DBNs (<b>D</b>ynamic <b>B</b>ayesian <b>N</b>etwork): Upcoming
+                </p>
+                <img class="z-depth-1" style="width: 70%;margin-left:15%" src="../statics/img/bns.png" alt="Figure 1. Dynamic Bayesian Network for Modeling Learning Progression ">
+                <br><span>Reference Publication: Dynamic Bayesian Inference Network and
+                hidden Markov Model for Modeling Learning Progression over
+                Multiple Time Points. Choi, Y. & Mislevy, R (2012). Unpublished
+                Dissertation from University of Maryland at College Park.</span>
+                <p>
+                    4. ML (Application for <b>M</b>achine <b>L</b>earnings): Upcoming
+                </p>
+
+            </div>
+        </div>
+        <footer>
+            <div>Tel : 010-3387-2271</div>
+            <div>Email : yountoto@gmail.com</div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

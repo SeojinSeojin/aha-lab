@@ -2,14 +2,205 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AHA Lab Research</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../statics/stylesheets/style.css" />
+    <style>
+        p {
+            margin-top: 2.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.05em;
+            font-weight: 900;
+            color: rgb(90, 90, 90);
+        }
+        
+        ul li {
+            margin-bottom: 0.8rem;
+            line-height: 1.2rem;
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-color: #f1f4f9;">
+    <div class="header-top"></div>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">People</a>
+            <a href="" class='selected'>Research</a>
+            <a href="">Publication</a>
+            <a href="">Software(CAT/BNAs)</a>
+            <a href="">Assessment</a>
+            <a href="">Consulting</a>
+        </nav>
+        <div class="yellow-line"></div>
+        <div class="title-markers">
+            <img src="../statics/img/aha-logo.png" alt="AHA LAB LOGO" class="title-logo">
+            <div class="title-text">LAB RESEARCH</div>
+        </div>
+    </header>
+    <div style="height:100vh; position:fixed; top:0; right:0; width:7vw; background-color: rgba(148, 225, 255, 0.3);"></div>
 
+    <main>
+        <div style="display: flex; justify-content:center; flex-wrap: wrap; margin-top:8vh">
+            <div style="height: 1rem; width:15rem"></div>
+            <div style="max-width:700px">
+                <p>1. Research Projects</p>
+                <div class="table-parent">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>년도</th>
+                                <th>지위</th>
+                                <th>금액</th>
+                                <th>프로젝트명</th>
+                                <th>키워드</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2019~2022</td>
+                                <td>연구책임자 (한국연구재단:융합공동연구)</td>
+                                <td>4억 5천만원</td>
+                                <td>
+                                    지역공동체활성화를 통한 삶의질 향상: ICT와 블록체인을 활용
+                                </td>
+                                <td>
+                                    공동체심리검사개발, 소비자심리빅데이터분석, 주거와 정신건강, 머신러닝, 블록체인, ICT
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2019~2022</td>
+                                <td>연구책임자 (한국연구재단: 이공계기본연구)</td>
+                                <td>1억 5천만원</td>
+                                <td>
+                                    머신러닝 및 블록체인을 활용한 생리적 지표기반 통합적재범예측평가시스템개발
+                                </td>
+                                <td>범죄심리, 뇌파연구, 인지 및 신경심리, 머신러닝</td>
+                            </tr>
+                            <tr>
+                                <td>2017~2019</td>
+                                <td>공동책임연구원 (한국연구재단: 이공계신진연구)</td>
+                                <td>1억만원</td>
+                                <td>머신러닝을 활용한 불면증 평가도구 개발</td>
+                                <td>건강심리, 머신러닝, 불면증심리검사개발, 심리검사</td>
+                            </tr>
+                            <tr>
+                                <td>2017~2020</td>
+                                <td>공동연구원 (한국연구재단: 인문사회계공동연구)</td>
+                                <td>1억 5천만원</td>
+                                <td>주택시장에 영향을 미치는 소비자심리 및 경제요인분석</td>
+                                <td>소비자심리, 머신러닝, 행동경제심리,</td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td>2015~2018</td>
+                                <td>공동책임연구원 (보건복지부산하건강진흥원)</td>
+                                <td>2억 7천만원</td>
+                                <td>온라인 한국형 우울 불안평가도구 개발</td>
+                                <td>우울심리검사, 불안심리검사, 컴퓨터활용평가도구
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2015~2016</td>
+                                <td>연구책임자 (한양사이버대학교)</td>
+                                <td>1천만원</td>
+                                <td>빅데이터를 활용한 텍스트분석(자기소개서 및 학업계획서)을 통한 진로 및 교육전략분석 및 탐색</td>
+                                <td>빅테이터분석, 텍스트분석, 자기소개서분석
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2015~2016</td>
+                                <td>연구책임자 (대한상공회)</td>
+                                <td>2천만원</td>
+                                <td>직업기초능력검사 데이터베이스 구축 및 표준화 연구</td>
+                                <td>직업기초능력검사, 기준설정
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2013~2015</td>
+                                <td>연구책임자 (한국연구재단 신진연구)</td>
+                                <td>6천만원</td>
+                                <td>인식적 프레임(Epistemic Frame) 학습을 위한 웹기반 교육프로그램 프로토타입(Prototype) 개발:　이론 모형 구축, 진단 및 평가를 위한 평가 도구(Diagnostic Stealth Assessment) 개발, 측정이론(Psychometric Model) 탐색, 시뮬레이션과 게임에 기초한 교육 프로그램연구 한국연구재단
+                                </td>
+                                <td>웹 기반, 시뮬레이션검사개발, 인식적프레임역량모형
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2013~2014</td>
+                                <td>연구책임자 (한양사이버대학교)</td>
+                                <td>5백만원</td>
+                                <td>지능검사 (Raven Progressive Test) 베이지안 네트워크를 통한 분석 </td>
+                                <td>머신러닝, 베이지안 네트워크 지능검사</td>
+                            </tr>
+                            <tr>
+                                <td>2009~2012</td>
+                                <td>Research Assistant</td>
+                                <td></td>
+                                <td>Cisco Systems Inc.: Cisco Networking Academy PI: Dr. Robert J. Mislevy
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2009~2012</td>
+                                <td>Research Assistant</td>
+                                <td></td>
+                                <td>Epistemic Network Analysis for Learning Trajectories in Game based learning system PI: Dr. Robert J. Mislevy
+
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2009~2012</td>
+                                <td>Research Assistant</td>
+                                <td></td>
+                                <td>College of Education in the Department of Curriculum and Instruction PI: Dr. Patricia Campbell,
+
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2009~2012</td>
+                                <td>Research Assistant</td>
+                                <td></td>
+                                <td>Developing effective feedback mechanisms in game based learning system using modern statistical methods PI: Dr. André A. Rupp,
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2009~2012</td>
+                                <td>Research Assistant</td>
+                                <td></td>
+                                <td>Social Network Analysis for modeling Learning Progression Dr. André A. Rupp
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>2. Collaboration</p>
+                <ul>
+                    <li>McGill University, Department of Psychology, 황흥선교수님</li>
+                    <li>University of Nevada, Las Vegas, Department of Education, 김정남교수님</li>
+                    <li>ETS 로버트미스레비교수님</li>
+                    <li>중앙대학교, 도시환경시스템공학부, 김승남교수님 </li>
+                    <li>한양대학교, 컴퓨터학과 고민삼 교수님</li>
+                    <li>경희대학교 정선호교수님</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div>Tel : 010-3387-2271</div>
+            <div>Email : yountoto@gmail.com</div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
