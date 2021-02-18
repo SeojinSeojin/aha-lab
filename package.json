@@ -1,0 +1,19 @@
+{
+  "name": "ahalab",
+  "version": "1.0.0",
+  "description": "yoon choi's lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeojinSeojin/aha-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeojinSeojin/aha-lab/issues"
+  },
+  "homepage": "https://github.com/SeojinSeojin/aha-lab#readme"
+}

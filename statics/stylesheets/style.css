@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    font-family: "My-Font";
+}
+
+table,
+tbody,
+tr,
+th,
+td {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: .5px solid #b9bcc1;
+    border-top: .5px solid #b9bcc1;
+}
+
+th {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    line-height: 1.5rem;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    margin-top: 5vh;
+    padding: 7vh;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    border-bottom: 1px solid rgb(65, 65, 65);
+    line-height: 2rem;
+    width: fit-content;
+}
+
+nav a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+
+nav a.selected {
+    font-weight: 900;
+}
+
+main {
+    min-width: 800px;
+}
+
+footer {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.yellow-line {
+    z-index: -1;
+    width: 55vw;
+    position: absolute;
+    left: 0;
+    bottom: -0.8rem;
+    border-bottom: .8rem solid #fff2b0;
+}
+
+.title-markers {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-30rem, 0)
+}
+
+.title-logo {
+    width: 110px;
+    margin-bottom: -6px;
+}
+
+.title-text {
+    font-size: 1.4em;
+    margin-top: auto;
+    margin-bottom: -6px;
+    font-weight: 900;
+    font-family: Myraid-Bold;
+    margin-left: 1.2rem;
+    color: rgb(55, 55, 55);
+}
+
+
+/* 한국어 폰트 - 나눔 고딕 */
+
+@font-face {
+    font-family: "My-Font";
+    src: url("../fonts/NanumGothic-Regular.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Myraid-Bold";
+    src: url("../fonts/Myriad-Pro-Black_31623.ttf") format("truetype");
+    font-style: normal;
+}
+
+
+/*  영어 폰트 - myraid */
+
+@font-face {
+    font-family: "My-Font";
+    src: url("../fonts/Myriad-Pro-Semibold_31650.ttf") format("truetype");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: "My-Font";
+    src: url("../fonts/Myriad-Pro-Light_31642.ttf") format("truetype");
+    unicode-range: U+0041-005A, U+0061-007A;
+    font-style: normal;
+}
+
+.main-titles {
+    font-weight: 900;
+    font-size: 1.1em;
+    margin-bottom: .5rem;
+}
+
+.main-divs {
+    margin-bottom: 1rem;
+}
+
+@media(min-height:800px) {
+    .main-divs,
+    footer {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width:1000px) {
+    .title-markers {
+        left: 0;
+        transform: translate(0, 0)
+    }
+    header {
+        height: 30vh;
+    }
+}
