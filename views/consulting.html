@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AHA Lab Consulting</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../statics/stylesheets/style.css" />
+    <style>
+        p {
+            margin-top: 2.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.05em;
+            font-weight: 900;
+            color: rgb(90, 90, 90);
+        }
+        
+        ul li {
+            margin-bottom: 0.8rem;
+            line-height: 1.2rem;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f1f4f9;">
+    <div class="header-top"></div>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">People</a>
+            <a href="">Research</a>
+            <a href="">Publication</a>
+            <a href="">Software(CAT/BNAs)</a>
+            <a href="">Assessment</a>
+            <a href="" class='selected'>Consulting</a>
+        </nav>
+        <div class="yellow-line"></div>
+        <div class="title-markers">
+            <img src="../statics/img/aha-logo.png" alt="AHA LAB LOGO" class="title-logo">
+            <div class="title-text">LAB CONSULTING</div>
+        </div>
+    </header>
+    <div style="height:100vh; position:fixed; top:0; left:0; width:7vw; background-color: rgba(148, 225, 255, 0.3);"></div>
+
+    <main>
+        <div style="display: flex; justify-content:center; flex-wrap: wrap; margin-top:8vh">
+            <div style="height: 1rem; width:15rem"></div>
+            <div style="max-width:700px">
+                <form action="">
+                    <label for="telephone">전화번호를 입력해주세요</label><input id="telephone" name="telephone" type="tel" placeholder="ex) 010-XXXX-XXXX">
+                    <label for="name">성함을 입력해주세요</label><input id="name" name="name" type="text" placeholder="ex) 홍길동"></label>
+                    <label for="origin">소속을 입력해주세요</label><input id="origin" name="origin" type="text" placeholder="ex) OOO대학교 XXX학과 학부생">
+                    <label for="content">문의사항을 입력해주세요</label><textarea id="content" name="content"></textarea>
+                    <input type="submit" value="제출하기">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div>Tel : 010-3387-2271</div>
+            <div>Email : yountoto@gmail.com</div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
