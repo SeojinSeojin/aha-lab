@@ -183,7 +183,8 @@ input[type="submit"] {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-30rem, 0)
+    transform: translate(-30rem, 0);
+    z-index: -1;
 }
 
 .title-logo {
