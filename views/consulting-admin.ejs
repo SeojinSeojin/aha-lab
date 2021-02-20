@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHA Lab Consulting - Admin</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body style="background-color: #f1f4f9;">
+    <div class="header-top"></div>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/people">People</a>
+            <a href="/research">Research</a>
+            <a href="/publication">Publication</a>
+            <a href="/software">Software(CAT/BNAs)</a>
+            <a href="/assessment">Assessment</a>
+            <a href="/consulting" class='selected'>Consulting</a>
+        </nav>
+        <div class="yellow-line"></div>
+        <div class="title-markers">
+            <img src="/img/aha-logo.png" alt="AHA LAB LOGO" class="title-logo">
+            <div class="title-text">LAB CONSULTING</div>
+        </div>
+    </header>
+    <div class="blue-line" style="height:100vh; position:fixed; top:0; left:0; width:7vw; background-color: rgba(148, 225, 255, 0.3);"></div>
+    <main style="display: flex; flex-direction:column; justify-content:center; align-items:center;">
+        <div style="height: 5rem; width:1rem"></div>
+        <div style="display: flex; justify-content:center; flex-wrap:wrap">
+            <% for (i in consults) { %>
+                <div style="width:300px; padding:1rem; border-radius:0.4rem; border:1px solid black; margin:1rem">
+                    <div>
+                        전화번호 :
+                        <%= consults[i].telephone %>
+                    </div>
+                    <div>
+                        이름 :
+                        <%= consults[i].name %>
+                    </div>
+                    <div>
+                        소속 :
+                        <%= consults[i].origin %>
+                    </div>
+                    <div style="width: 100%; height:1rem; border-bottom: 1px solid black;"></div>
+                    <div style="padding-top:1rem;">
+                        <%= consults[i].content %>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 import express from "express";
+import ConsultModel from "./models/Consult"
 
 const my_router = express.Router();
 
@@ -28,6 +29,31 @@ my_router.get("/assessment", (req, res) => {
 
 my_router.get("/consulting", (req, res) => {
     res.render("consulting.ejs")
+})
+
+my_router.post("/consulting/create", (req, res) => {
+    console.log("POST /consulting/create\n", req.body)
+    const consult = new ConsultModel({
+        telephone: req.body.telephone,
+        name: req.body.name,
+        origin: req.body.origin,
+        content: req.body.content
+    });
+
+    consult.save((err) => {
+        if (err) {
+            console.log(err);
+            res.render("/");
+        } else {
+            res.redirect("/consulting")
+        }
+    })
+})
+
+my_router.get("/consulting/admin", (req, res) => {
+    ConsultModel.find({}, (err, consults) => {
+        res.render("consulting-admin.ejs", { consults: consults })
+    })
 })
 
 module.exports = my_router

@@ -20,6 +20,16 @@
             margin-bottom: 0.8rem;
             line-height: 1.2rem;
         }
+        
+        @media(max-width:900px) {
+            #md {
+                flex-direction: column;
+            }
+            form {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
     </style>
 </head>
 
@@ -41,13 +51,13 @@
             <div class="title-text">LAB CONSULTING</div>
         </div>
     </header>
-    <div style="height:100vh; position:fixed; top:0; left:0; width:7vw; background-color: rgba(148, 225, 255, 0.3);"></div>
+    <div class="blue-line" style="height:100vh; position:fixed; top:0; left:0; width:7vw; background-color: rgba(148, 225, 255, 0.3);"></div>
 
     <main>
-        <div style="display: flex; justify-content:center; flex-wrap: wrap; margin-top:8vh">
+        <div id="md" style="display: flex; justify-content:center; flex-wrap: wrap; margin-top:8vh">
             <div style="height: 1rem; width:15rem"></div>
             <div style="max-width:700px">
-                <form action="">
+                <form action="/consulting/create" method="POST">
                     <label for="telephone">전화번호를 입력해주세요</label><input id="telephone" name="telephone" type="tel" placeholder="ex) 010-XXXX-XXXX">
                     <label for="name">성함을 입력해주세요</label><input id="name" name="name" type="text" placeholder="ex) 홍길동"></label>
                     <label for="origin">소속을 입력해주세요</label><input id="origin" name="origin" type="text" placeholder="ex) OOO대학교 XXX학과 학부생">

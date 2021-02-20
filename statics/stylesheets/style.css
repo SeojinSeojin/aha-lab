@@ -282,4 +282,7 @@ input[type="submit"] {
     textarea {
         width: 100%;
     }
+    .blue-line {
+        visibility: hidden;
+    }
 }
