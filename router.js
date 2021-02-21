@@ -51,9 +51,32 @@ my_router.post("/consulting/create", (req, res) => {
 })
 
 my_router.get("/consulting/admin", (req, res) => {
-    ConsultModel.find({}, (err, consults) => {
-        res.render("consulting-admin.ejs", { consults: consults })
-    })
+    if (req.session.isLoggedIn) {
+        ConsultModel.find({}, (err, consults) => {
+            res.render("consulting-admin.ejs", { consults: consults })
+        })
+    } else {
+        res.redirect("/");
+    }
+})
+
+my_router.post("/login", (req, res) => {
+    const pw = req.body.pw
+    console.log(pw);
+    if (pw == "1234") {
+        req.session.isLoggedIn = true;
+        res.json({
+            isSuccess: true,
+            code: 200,
+            message: "로그인 성공"
+        })
+    } else {
+        res.json({
+            isSuccess: true,
+            code: 202,
+            message: "비밀번호가 잘못되었습니다"
+        })
+    }
 })
 
 module.exports = my_router

@@ -12,6 +12,8 @@ const CookieStore = MongoStore(session);
 
 const db = require("./db.js");
 
+const { expressCspHeader, INLINE, NONE, SELF } = require('express-csp-header');
+
 app.use(helmet());
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
@@ -19,6 +21,11 @@ app.use(express.static(__dirname + "/statics"));
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(expressCspHeader({
+    directives: {
+        'script-src': [SELF, INLINE, "https://cdnjs.cloudflare.com", "cdn.jsdelivr.net"],
+    }
+}));
 
 db();
 
