@@ -14,6 +14,8 @@ const db = require("./db.js");
 
 const { expressCspHeader, INLINE, NONE, SELF } = require('express-csp-header');
 
+require("dotenv").config();
+
 app.use(helmet());
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");

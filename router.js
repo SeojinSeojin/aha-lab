@@ -11,12 +11,8 @@ my_router.get("/people", (req, res) => {
     res.render("people.ejs")
 })
 
-my_router.get("/research", (req, res) => {
-    res.render("research.ejs")
-})
-
-my_router.get("/publication", (req, res) => {
-    res.render("publication.ejs")
+my_router.get("/research-publication", (req, res) => {
+    res.render("research-publication.ejs")
 })
 
 my_router.get("/software", (req, res) => {
@@ -63,7 +59,7 @@ my_router.get("/consulting/admin", (req, res) => {
 my_router.post("/login", (req, res) => {
     const pw = req.body.pw
     console.log(pw);
-    if (pw == "1234") {
+    if (pw == process.env.PW) {
         req.session.isLoggedIn = true;
         res.json({
             isSuccess: true,
@@ -77,6 +73,10 @@ my_router.post("/login", (req, res) => {
             message: "비밀번호가 잘못되었습니다"
         })
     }
+})
+
+my_router.get("/board", (req, res) => {
+    res.render("board.ejs")
 })
 
 module.exports = my_router
