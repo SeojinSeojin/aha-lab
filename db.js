@@ -16,5 +16,6 @@ module.exports = () => {
     connect();
     mongoose.connection.on("disconnected", connect);
     require("./models/Consult");
+    require("./models/Board");
 
 };

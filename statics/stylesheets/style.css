@@ -158,6 +158,14 @@ input[type="submit"] {
     border: 1px solid black;
 }
 
+button {
+    padding: 1rem;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    border-bottom: #fff2b0 .8rem solid;
+}
+
 .yellow-line {
     z-index: -1;
     width: 55vw;

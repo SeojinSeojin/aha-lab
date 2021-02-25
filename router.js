@@ -1,4 +1,5 @@
 import express from "express";
+import BoardModel from "./models/Board";
 import ConsultModel from "./models/Consult"
 
 const my_router = express.Router();
@@ -76,7 +77,25 @@ my_router.post("/login", (req, res) => {
 })
 
 my_router.get("/board", (req, res) => {
-    res.render("board.ejs")
+    BoardModel.find({}, (err, boards) => {
+        res.render("board.ejs", { isLoggedIn: req.session.isLoggedIn, boards: boards })
+    })
+})
+
+my_router.post("/board/create", (req, res) => {
+    console.log("POST /consulting/create\n", req.body)
+    const board = new BoardModel({
+        url: req.body.url,
+        comment: req.body.comment,
+    });
+    board.save((err) => {
+        if (err) {
+            console.log(err);
+            res.sendStatus(400);
+        } else {
+            res.sendStatus(200);
+        }
+    })
 })
 
 module.exports = my_router
