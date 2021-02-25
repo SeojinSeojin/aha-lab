@@ -51,11 +51,14 @@
                     <button onclick="onBoardCreateClicked()">새 항목 추가하기</button>
                     <% } %>
                         <% for (i in boards) { %>
-                            <div>
-                                <a href="<%= boards[i].url %>">
+                            <div style="padding:0.5rem;" class="board-div">
+                                <div style="padding-bottom: 0.3rem;">
+                                    <%= (Number(i)+1) %>.
+                                </div>
+                                <a href="<%= boards[i].url %>" style="background-color: #fff2b0;">
                                     <%= boards[i].url %>
                                 </a>
-                                <div>
+                                <div style="border-bottom: 1px solid rgb(151, 151, 151); padding-bottom:.3rem; padding-top:.3rem">
                                     <%= boards[i].comment %>
                                 </div>
                             </div>
