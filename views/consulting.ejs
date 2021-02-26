@@ -57,13 +57,16 @@
         <div id="md" style="display: flex; justify-content:center; flex-wrap: wrap; margin-top:8vh">
             <div style="height: 1rem; width:15rem"></div>
             <div style="max-width:700px">
-                <form action="/consulting/create" method="POST">
-                    <label for="telephone">전화번호를 입력해주세요</label><input id="telephone" name="telephone" type="tel" placeholder="ex) 010-XXXX-XXXX">
-                    <label for="name">성함을 입력해주세요</label><input id="name" name="name" type="text" placeholder="ex) 홍길동"></label>
-                    <label for="origin">소속을 입력해주세요</label><input id="origin" name="origin" type="text" placeholder="ex) OOO대학교 XXX학과 학부생">
-                    <label for="content">문의사항을 입력해주세요</label><textarea id="content" name="content"></textarea>
-                    <input type="submit" value="제출하기">
-                </form>
+                <% if (isLoggedIn) { %>
+                    <button onclick="location.href='/consulting/admin'">Consulting 기록 보기</button>
+                    <% } %>
+                        <form action="/consulting/create" method="POST">
+                            <label for="telephone">전화번호를 입력해주세요</label><input id="telephone" name="telephone" type="tel" placeholder="ex) 010-XXXX-XXXX">
+                            <label for="name">성함을 입력해주세요</label><input id="name" name="name" type="text" placeholder="ex) 홍길동"></label>
+                            <label for="origin">소속을 입력해주세요</label><input id="origin" name="origin" type="text" placeholder="ex) OOO대학교 XXX학과 학부생">
+                            <label for="content">문의사항을 입력해주세요</label><textarea id="content" name="content"></textarea>
+                            <input type="submit" value="제출하기">
+                        </form>
             </div>
         </div>
         <footer>

@@ -25,7 +25,7 @@ my_router.get("/assessment", (req, res) => {
 })
 
 my_router.get("/consulting", (req, res) => {
-    res.render("consulting.ejs")
+    res.render("consulting.ejs", { isLoggedIn: req.session.isLoggedIn })
 })
 
 my_router.post("/consulting/create", (req, res) => {

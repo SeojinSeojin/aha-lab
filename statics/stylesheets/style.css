@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: "My-Font";
+    line-height: 1.5rem;
 }
 
 table,
@@ -126,7 +127,6 @@ textarea {
 input,
 textarea {
     background-color: transparent;
-    transition: .5s;
     width: 500px;
 }
 
@@ -156,6 +156,7 @@ input[type="submit"] {
     width: 6em;
     margin-top: 3vh;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 button {
@@ -168,6 +169,10 @@ button {
     color: rgb(18, 121, 139);
 }
 
+button:focus {
+    outline: 0;
+}
+
 .yellow-line {
     z-index: -1;
     width: 55vw;
@@ -178,11 +183,11 @@ button {
 }
 
 .yellow-line-home {
-    width: 1000px;
+    width: 975px;
     height: 0.8rem;
     background-color: #fff2b0;
     position: absolute;
-    bottom: -0.9rem;
+    bottom: -0.8rem;
     left: 50%;
     transform: translate(-50%, 0)
 }
@@ -205,7 +210,7 @@ button {
 .title-text {
     font-size: 1.4em;
     margin-top: auto;
-    margin-bottom: -6px;
+    margin-bottom: -2px;
     font-weight: 900;
     font-family: Myraid-Bold;
     margin-left: 1.2rem;
@@ -252,18 +257,14 @@ button {
     font-style: normal;
 }
 
-.main-titles {
+h3 {
     font-weight: 900;
     font-size: 1.1em;
+    margin-top: 1rem;
     margin-bottom: .5rem;
 }
 
-.main-divs {
-    margin-bottom: 1rem;
-}
-
 @media(min-height:800px) {
-    .main-divs,
     footer {
         font-size: 1.1rem;
     }
@@ -273,6 +274,9 @@ button {
     .title-markers {
         left: 0;
         transform: translate(0, 0)
+    }
+    .title-logo {
+        width: 80px;
     }
     nav {
         flex-direction: column;
@@ -314,6 +318,9 @@ button {
         padding-right: 5%;
     }
     .md {
+        width: 100%;
+    }
+    .board-div {
         width: 100%;
     }
 }
