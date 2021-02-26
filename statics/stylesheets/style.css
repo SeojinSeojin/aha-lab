@@ -297,9 +297,23 @@ button {
         width: 100%;
     }
     .blue-line {
-        visibility: hidden;
+        display: none;
     }
     board-div {
+        width: 100%;
+    }
+    nav,
+    footer {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    main {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .md {
         width: 100%;
     }
 }
