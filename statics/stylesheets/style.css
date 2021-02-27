@@ -278,7 +278,11 @@ h3 {
     }
     .title-logo {
         width: 80px;
-        height: auto;
+        height: 72.8833px;
+        margin-bottom: -3.5px;
+    }
+    .title-text {
+        margin-left: .2rem;
     }
     nav {
         flex-direction: column;
@@ -324,5 +328,10 @@ h3 {
     }
     .board-div {
         width: 100%;
+    }
+    th,
+    td {
+        padding-top: .7rem;
+        padding-bottom: .7rem;
     }
 }
