@@ -100,12 +100,13 @@ header {
 }
 
 .title-accent {
-    color: rgb(21, 145, 202);
+    color: #73b6f6;
     font-family: Myraid-Bold;
 }
 
 main {
     min-width: 800px;
+    margin-bottom: 5vh;
 }
 
 footer {
@@ -190,7 +191,7 @@ button:focus {
 }
 
 .yellow-line-home {
-    width: 1000px;
+    width: 977px;
     height: 0.8rem;
     background-color: #fff2b0;
     position: absolute;
@@ -225,7 +226,7 @@ button:focus {
     margin-bottom: -2px;
     font-weight: 900;
     font-family: Myraid-Bold;
-    margin-left: 1.2rem;
+    margin-left: 0.7rem;
     color: rgb(55, 55, 55);
 }
 
