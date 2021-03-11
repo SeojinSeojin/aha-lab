@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AHA Lab Home</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <style>
+        ul {
+            padding-left: 1rem;
+        }
+    </style>
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -30,35 +35,14 @@
         <div style="
           display: flex;
           justify-content: center;
+          flex-direction: column;
           align-items: center;
           height: 73vh;
         ">
             <img src="/img/aha-logo.png" alt="AHA LAB LOGO" style="width: 17rem" onclick="onLoginClicked()" />
+            <div style="font-size: 1.7rem; font-family:Myraid-Bold; text-align:center; margin-top:2rem"><span class="title-accent">A</span>rtificial intelligence <span class="title-accent">H</span>umanitarian <span class="title-accent">A</span>ssessment </div>
         </div>
-        <div style="min-height: 60vh">
-            <div>
-                <h3>Assessment & Evaluation System</h3>
-                <p>
-                    평가와 검사는 정확한 진단을 통하여 보다 나은 삶을 위한 활용을 위한 고민.
-                    <br /> 타당도있고 신뢰도 높은 검사를 개발하고 정확도 있고 안정된 평가시스템을 구축.
-                </p>
-            </div>
-            <div>
-                <h3>Learning Analytics</h3>
-                <p>
-                    빅데이터, 통계분석, 머신러닝, AI등을 활용하여 학습을 분석하고 향상을 위한 진단을 제공.
-                </p>
-            </div>
-            <div>
-                <h3>People Analytics</h3>
-                <p>
-                    사람, 사람과의 관계, 사람과 조직, 환경과의 관계를 분석하고 맞춤형 프로그램을 제공.
-                </p>
-            </div>
-            <div>
-                <h3>Technology based Learning System</h3>
-                <p>테크놀로지를 활용한 학습시스템을 구축.</p>
-            </div>
+        <div style="min-height: 40vh">
             <div>
                 <h3>Upcoming Events</h3>
                 <ul>
@@ -74,10 +58,6 @@
                 </ul>
             </div>
         </div>
-        <footer>
-            <div>Tel : 010-3387-2271</div>
-            <div>Email : yountoto@gmail.com</div>
-        </footer>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
