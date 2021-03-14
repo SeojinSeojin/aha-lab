@@ -63,7 +63,6 @@ body {
 
 nav {
     border-bottom: 1px solid rgb(65, 65, 65);
-    line-height: 2rem;
     width: fit-content;
     height: 100%;
     display: flex;
@@ -86,6 +85,7 @@ nav a {
     padding-left: 0.8rem;
     padding-right: 0.8rem;
     font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 
 nav a.selected {
@@ -221,7 +221,7 @@ button:focus {
 }
 
 .title-text {
-    font-size: 1.4em;
+    font-size: 1.6em;
     margin-top: auto;
     margin-bottom: -2px;
     font-weight: 900;
@@ -237,6 +237,29 @@ button:focus {
 
 .board-div {
     width: 500px;
+}
+
+.md {
+    max-width: 640px;
+    position: relative;
+}
+
+.inner-header {
+    text-align: right;
+    position: absolute;
+    padding-right: 0.5rem;
+    border-right: #fff2b0 0.7rem solid;
+}
+
+.inner-container {
+    position: relative;
+    margin-bottom: 3rem;
+    min-height: 100px;
+}
+
+.name {
+    margin-top: 2rem;
+    font-weight: 900;
 }
 
 
@@ -351,5 +374,16 @@ h3 {
     td {
         padding-top: .7rem;
         padding-bottom: .7rem;
+    }
+    .inner-header {
+        position: relative;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 0.5rem;
+        left: 0!important;
+        width: 100%!important;
+        border-right: none;
+        border-bottom: .5rem solid #fff2b0;
+        margin-bottom: 1rem;
     }
 }
